@@ -12,4 +12,5 @@ length = st.number_input("Length", min_value=1, max_value=200, value=12)
 
 if st.button("Generate Password"):
     result = random_string(length)
+    print(f"New Password!: {result}")
     st.success(result)
